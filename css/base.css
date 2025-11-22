@@ -1,0 +1,53 @@
+/* Remove default margin and padding from common tags */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default italic effect */
+em,
+i {
+  font-style: normal;
+}
+
+/* Set default font size, line height, and font family properties */
+body {
+  font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #333;
+}
+
+/* Remove default underline from links and set default text color */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Set vertical alignment for images to middle, remove default bottom gap */
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* Remove default input styles */
+input {
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}

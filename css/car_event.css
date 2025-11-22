@@ -1,0 +1,222 @@
+/* Car Events Header */
+.event-container {
+  text-align: center;
+  padding: 60px 20px; 
+  margin-bottom: 35px;
+  background-color: #fff; 
+  color: #000; 
+}
+
+.event-container h2 {
+  font-size: 1.25rem;
+  letter-spacing: .375rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.event-container h1 {
+  font-size: 2.125rem;
+  letter-spacing: .375rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #000;
+  position: relative;
+  display: inline-block;
+}
+
+/* Add title underline animation effect */
+.event-container h1::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #007bff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.event-container h1:hover::after {
+  width: 100%;
+}
+
+.event-container p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 auto 20px;
+  max-width: 57.14rem; 
+  color: #333; 
+}
+
+.event-container p:last-of-type {
+  margin-bottom: 0; 
+}
+
+/* Wrapper to handle the overall padding */
+.car-event-wrapper {
+  padding: 0 20px; /* Adds space on both sides of the content */
+  max-width: 1200px; /* Optional: Limit the width for larger screens */
+  margin: 0 auto;  /* Centers the wrapper on the page */
+}
+
+/* Container for the image and text (Flexbox layout) */
+.car-event-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.car-event-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Default layout: Image on the left, text on the right */
+.default-layout {
+  flex-direction: row;        /* Default order: left image, right text */
+}
+
+/* Reverse layout: Image on the right, text on the left */
+.reverse-layout {
+  flex-direction: row-reverse; /* Reverse order: right image, left text */
+}
+
+/* Image styling */
+.car-event-image {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.car-event-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Text section styling */
+.car-event-text {
+  flex: 1;                    /* The text section takes up the remaining space */
+}
+
+/* Styling for the title */
+.car-event-text h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.car-event-text h1:hover {
+  color: #000;
+}
+
+/* Styling for the description */
+.car-event-details {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #000;
+}
+
+/* Highlight date and time information */
+.car-event-details b {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Email submission styling */
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 1000;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+.form-container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+input[type="email"] {
+  width: 60%;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input[type="email"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive design optimization */
+@media (max-width: 768px) {
+  .car-event-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .car-event-image {
+    max-width: 100%;
+  }
+
+  input[type="email"] {
+    width: 80%;
+  }
+}

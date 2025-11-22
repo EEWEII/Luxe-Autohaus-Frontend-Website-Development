@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Event</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/car_event.css">
+</head>
+<body>
+  <!-- header -->
+  <div class="header wrapper">
+
+    <!-- logo -->
+    <div class="logo">
+      <h1><a href="./index.html">Luxe Autohaus</a></h1>
+    </div>
+
+      <!-- nav -->
+      <div class="nav">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./our_cars.html">OUR CARS</a></li>
+          
+          <!-- Service dropdown -->
+          <li class="has-submenu">
+            <a href="#">SERVICE</a>
+            <ul class="submenu">
+              <li><a href="./finance.html">Finance Service</a></li>
+            </ul>
+          </li>
+
+          <!-- About Us dropdown -->
+          <li class="has-submenu">
+            <a href="#">ABOUT US</a>
+            <ul class="submenu">
+              <li><a href="./ourTeam.html">Our Team</a></li>
+              <li><a href="./carEvent.html">Car Event</a></li>
+              <li><a href="./Ceremony.html">Ceremony</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="./contact_us.html">CONTACT US</a></li>
+          <li><a href="./login.html">LOGIN</a></li>
+        </ul>
+      </div>
+      
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  </div>
+
+  <!-- Main container -->
+  <div class="event-container">
+      <!-- Page title -->
+      <h1>CAR EVENT</h1>
+      <p>Welcome to our Car Events page, your ultimate destination for discovering the most exciting automotive gatherings around! Whether you're a lifelong car enthusiast, a collector, or just looking for a fun day out, our events showcase the best in automotive culture and innovation.</p>
+  </div>
+
+  <div class="car-event-wrapper">
+      <div class="car-event-container">
+          <img src="./images/Meetup/carMeetOne.jpg" alt="Car Meet Image" class="car-event-image" />
+          <div class="car-event-text">
+              <h1>London Annual Car Meet</h1>
+              <p class="car-event-details">Join us for the London Annual Car Meet, a thrilling gathering of car enthusiasts and collectors. Experience a showcase of vintage classics, supercars, and custom builds that celebrate automotive excellence.<br><br>
+                  <b>Date:</b> 25/03/2025<br>
+                  <b>Time:</b> 3PM-10PM<br>
+                  <b>Venue:</b> London Park
+              </p>
+          </div>
+      </div>
+  </div>
+      
+  <!-- Right side (right image, left text) -->
+  <div class="car-event-wrapper">
+    <div class="car-event-container reverse-layout">
+        <img src="./images/Meetup/carMeetTwo.jpg" alt="Car Meet Image" class="car-event-image" />
+        <div class="car-event-text">
+            <h1>JDM Collectors UK</h1>
+            <p class="car-event-details">Join us at the JDM Collectors UK to celebrate Japanese automotive culture. See iconic JDM cars, custom builds, rare imports, and meet fellow enthusiasts. A must-attend event for JDM lovers!<br><br>
+                <b>Date:</b> 08/06/2025<br>
+                <b>Time:</b> 8AM-6PM<br>
+                <b>Venue:</b> Bob's JDM Garage
+            </p>
+        </div>
+    </div>
+  </div>
+
+  <div class="car-event-wrapper">
+      <div class="car-event-container">
+          <img src="./images/Meetup/carMeetThree.jpg" alt="Car Meet Image" class="car-event-image" />
+          <div class="car-event-text">
+              <h1>Miata Fiesta</h1>
+              <p class="car-event-details">Rev up for the ultimate Miata Meet! Connect with fellow enthusiasts, showcase your car, enjoy scenic drives, swap stories, and celebrate the iconic roadster in a fun, community-focused atmosphere!<br><br>
+                  <b>Date:</b> 16/06/2025<br>
+                  <b>Time:</b> 7PM-12AM<br>
+                  <b>Venue:</b> Santa Pod Raceway
+              </p>
+          </div>
+      </div>
+  </div>
+    
+  <!-- Right side (right image, left text) -->
+  <div class="car-event-wrapper">
+    <div class="car-event-container reverse-layout">
+        <img src="./images/Meetup/carMeetFour.jpg" alt="Car Meet Image" class="car-event-image" />
+        <div class="car-event-text">
+            <h1>Mini For All</h1>
+            <p class="car-event-details">Join us at Mini For All! Celebrate camaraderie, admire classic and modern Minis, enjoy thrilling drives, fun activities, and connect with fellow Mini enthusiasts. All are welcome!<br><br>
+                <b>Date:</b> 02/07/2025<br>
+                <b>Time:</b> 11AM-11PM<br>
+                <b>Venue:</b> Goodwood Motor Circuit
+            </p>
+        </div>
+    </div>
+  </div>
+
+  <div class="event-container">
+    <!-- Page title -->
+    
+    <h1>HOST WITH US</h1>
+    <p>Are you interested in hosting the event as a vendor, sponsor, or showcasing your brand? Let's make this car meet unforgettable together! Enter your email below, and we'll reach out with all the details on how you can get involved.</p>
+  </div>
+
+  <div class="notification" id="notification">Success! Thank you for your submission.</div>
+
+  <div class="form-container">
+      <input type="email" id="emailInput" placeholder="Enter your email">
+      <button id="submitButton">Submit</button>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-content wrapper">
+      <div class="footer-info">
+        <div class="contact-section">
+          <h3>CONTACT US</h3>
+          <p class="address">123 Luxury Avenue, London, UK</p>
+          <p class="phone">+44 (0) 20 1234 5678</p>
+          <p class="email">info@luxeautohaus.com</p>
+        </div>
+        <div class="hours-section">
+          <h3>OPENING HOURS</h3>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+          <p>Saturday: 10:00 AM - 5:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+        <div class="location-section">
+          <h3>LOCATION</h3>
+          <p>Central London Showroom</p>
+          <p>Greater London Area</p>
+          <p>United Kingdom</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">Â© 2024 Luxe Autohaus. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="./js/carEvent.js"></script>
+  <script src="./js/nav.js"></script>
+</body>
+</html>
